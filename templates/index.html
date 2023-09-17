@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticketing System</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Submit Form</h1>
+    <div class="form-container">
+      <form method="post" action="/">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" autocomplete="on"><br><br>
+        <label for="desc">Description:</label><br>
+        <input type="text" id="desc" name="desc" autocomplete="on"><br><br>
+        <label for="cate">Category:</label><br>
+        <input type="text" id="cate" name="cate"><br><br>
+        <input type="submit" value="Submit"><br>
+        <button type="submit" name="action" value="view">View</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

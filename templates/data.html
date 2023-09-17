@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Details</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Data Details</h1>
+    <div class="data-container">
+      {% if data %}
+      {% for ticket in data %}
+      <p><strong>Title:</strong> {{ ticket['Title'] }} </p>
+      <p><strong>Description:</strong> {{ ticket['Description'] }}</p>
+      <p><strong>Category:</strong> {{ ticket['Category'] }}</p>
+      <p><strong>Status:</strong> {{ ticket['Status'] }}</p>
+      <p><strong>Date:</strong> {{ ticket['Date'] }}</p>
+      <p><strong>Ticket ID:</strong> {{ ticket['Ticket'] }}</p>
+      <hr>
+      {% endfor %}
+      {% else %}
+      <p>No tickets found....</p>
+      {% endif %}
+      <form method="get" action="/">
+        <button type="submit" name="action" value="Create">Create</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
