@@ -2,3 +2,8 @@
 *.html linguist-detectable=true
 *.js linguist-detectable=true
 *.py linguist-detectable=true
+
+*.py linguist-language=Python
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.flask linguist-language=Python
