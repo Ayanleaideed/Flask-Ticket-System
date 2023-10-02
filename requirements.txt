@@ -1,4 +1,4 @@
-#some of them are not need
+
 blinker==1.6.2
 click==8.1.6
 colorama==0.4.6
